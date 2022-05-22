@@ -4,7 +4,7 @@ services:
     container_name: homeassistant
     image: "ghcr.io/home-assistant/raspberrypi4-homeassistant:stable"
     volumes:
-      - /mnt/backup/home_assistant/:/config
+      - /mnt/1T_volume/home_assistant/:/config
       - /etc/localtime:/etc/localtime:ro
     restart: unless-stopped
     privileged: true
